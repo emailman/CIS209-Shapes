@@ -36,26 +36,29 @@
             this.rbtnSquare = new System.Windows.Forms.RadioButton();
             this.rbtnRightTriangle = new System.Windows.Forms.RadioButton();
             this.tbpSummary = new System.Windows.Forms.TabPage();
-            this.tbpDetail = new System.Windows.Forms.TabPage();
-            this.tbpSort = new System.Windows.Forms.TabPage();
             this.groupBox2 = new System.Windows.Forms.GroupBox();
-            this.label1 = new System.Windows.Forms.Label();
-            this.lblCountRightTriangles = new System.Windows.Forms.Label();
-            this.lblCountSquares = new System.Windows.Forms.Label();
-            this.label2 = new System.Windows.Forms.Label();
-            this.lblCountRectangles = new System.Windows.Forms.Label();
-            this.label3 = new System.Windows.Forms.Label();
             this.lblCountCircles = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
+            this.lblCountRectangles = new System.Windows.Forms.Label();
+            this.label3 = new System.Windows.Forms.Label();
+            this.lblCountSquares = new System.Windows.Forms.Label();
+            this.label2 = new System.Windows.Forms.Label();
+            this.lblCountRightTriangles = new System.Windows.Forms.Label();
+            this.label1 = new System.Windows.Forms.Label();
+            this.tbpDetail = new System.Windows.Forms.TabPage();
+            this.tbpSort = new System.Windows.Forms.TabPage();
             this.panel1 = new System.Windows.Forms.Panel();
-            this.rbtnSortByArea = new System.Windows.Forms.RadioButton();
             this.rbtnSortByPerimeter = new System.Windows.Forms.RadioButton();
+            this.rbtnSortByArea = new System.Windows.Forms.RadioButton();
+            this.listBox1 = new System.Windows.Forms.ListBox();
+            this.listBox2 = new System.Windows.Forms.ListBox();
             this.tabControl1.SuspendLayout();
             this.tbpCreate.SuspendLayout();
             this.groupBox1.SuspendLayout();
             this.tbpSummary.SuspendLayout();
-            this.tbpSort.SuspendLayout();
             this.groupBox2.SuspendLayout();
+            this.tbpDetail.SuspendLayout();
+            this.tbpSort.SuspendLayout();
             this.panel1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -149,25 +152,6 @@
             this.tbpSummary.Text = "Summary";
             this.tbpSummary.UseVisualStyleBackColor = true;
             // 
-            // tbpDetail
-            // 
-            this.tbpDetail.Location = new System.Drawing.Point(4, 22);
-            this.tbpDetail.Name = "tbpDetail";
-            this.tbpDetail.Size = new System.Drawing.Size(331, 238);
-            this.tbpDetail.TabIndex = 2;
-            this.tbpDetail.Text = "Detail";
-            this.tbpDetail.UseVisualStyleBackColor = true;
-            // 
-            // tbpSort
-            // 
-            this.tbpSort.Controls.Add(this.panel1);
-            this.tbpSort.Location = new System.Drawing.Point(4, 22);
-            this.tbpSort.Name = "tbpSort";
-            this.tbpSort.Size = new System.Drawing.Size(331, 238);
-            this.tbpSort.TabIndex = 3;
-            this.tbpSort.Text = "Sort";
-            this.tbpSort.UseVisualStyleBackColor = true;
-            // 
             // groupBox2
             // 
             this.groupBox2.Controls.Add(this.lblCountCircles);
@@ -184,63 +168,6 @@
             this.groupBox2.TabIndex = 0;
             this.groupBox2.TabStop = false;
             this.groupBox2.Text = "Inventory Summary";
-            // 
-            // label1
-            // 
-            this.label1.Location = new System.Drawing.Point(7, 20);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(80, 14);
-            this.label1.TabIndex = 0;
-            this.label1.Text = "Right Triangles";
-            this.label1.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
-            // 
-            // lblCountRightTriangles
-            // 
-            this.lblCountRightTriangles.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.lblCountRightTriangles.Location = new System.Drawing.Point(94, 20);
-            this.lblCountRightTriangles.Name = "lblCountRightTriangles";
-            this.lblCountRightTriangles.Size = new System.Drawing.Size(40, 14);
-            this.lblCountRightTriangles.TabIndex = 1;
-            this.lblCountRightTriangles.Text = "0";
-            this.lblCountRightTriangles.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            // 
-            // lblCountSquares
-            // 
-            this.lblCountSquares.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.lblCountSquares.Location = new System.Drawing.Point(94, 45);
-            this.lblCountSquares.Name = "lblCountSquares";
-            this.lblCountSquares.Size = new System.Drawing.Size(40, 14);
-            this.lblCountSquares.TabIndex = 3;
-            this.lblCountSquares.Text = "0";
-            this.lblCountSquares.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            // 
-            // label2
-            // 
-            this.label2.Location = new System.Drawing.Point(7, 45);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(80, 14);
-            this.label2.TabIndex = 2;
-            this.label2.Text = "Squares";
-            this.label2.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
-            // 
-            // lblCountRectangles
-            // 
-            this.lblCountRectangles.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.lblCountRectangles.Location = new System.Drawing.Point(94, 72);
-            this.lblCountRectangles.Name = "lblCountRectangles";
-            this.lblCountRectangles.Size = new System.Drawing.Size(40, 14);
-            this.lblCountRectangles.TabIndex = 5;
-            this.lblCountRectangles.Text = "0";
-            this.lblCountRectangles.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            // 
-            // label3
-            // 
-            this.label3.Location = new System.Drawing.Point(7, 72);
-            this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(80, 14);
-            this.label3.TabIndex = 4;
-            this.label3.Text = "Rectangle";
-            this.label3.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             // 
             // lblCountCircles
             // 
@@ -261,6 +188,84 @@
             this.label4.Text = "Circles";
             this.label4.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             // 
+            // lblCountRectangles
+            // 
+            this.lblCountRectangles.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.lblCountRectangles.Location = new System.Drawing.Point(94, 72);
+            this.lblCountRectangles.Name = "lblCountRectangles";
+            this.lblCountRectangles.Size = new System.Drawing.Size(40, 14);
+            this.lblCountRectangles.TabIndex = 5;
+            this.lblCountRectangles.Text = "0";
+            this.lblCountRectangles.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // label3
+            // 
+            this.label3.Location = new System.Drawing.Point(7, 72);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(80, 14);
+            this.label3.TabIndex = 4;
+            this.label3.Text = "Rectangle";
+            this.label3.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            // 
+            // lblCountSquares
+            // 
+            this.lblCountSquares.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.lblCountSquares.Location = new System.Drawing.Point(94, 45);
+            this.lblCountSquares.Name = "lblCountSquares";
+            this.lblCountSquares.Size = new System.Drawing.Size(40, 14);
+            this.lblCountSquares.TabIndex = 3;
+            this.lblCountSquares.Text = "0";
+            this.lblCountSquares.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // label2
+            // 
+            this.label2.Location = new System.Drawing.Point(7, 45);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(80, 14);
+            this.label2.TabIndex = 2;
+            this.label2.Text = "Squares";
+            this.label2.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            // 
+            // lblCountRightTriangles
+            // 
+            this.lblCountRightTriangles.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.lblCountRightTriangles.Location = new System.Drawing.Point(94, 20);
+            this.lblCountRightTriangles.Name = "lblCountRightTriangles";
+            this.lblCountRightTriangles.Size = new System.Drawing.Size(40, 14);
+            this.lblCountRightTriangles.TabIndex = 1;
+            this.lblCountRightTriangles.Text = "0";
+            this.lblCountRightTriangles.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // label1
+            // 
+            this.label1.Location = new System.Drawing.Point(7, 20);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(80, 14);
+            this.label1.TabIndex = 0;
+            this.label1.Text = "Right Triangles";
+            this.label1.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            // 
+            // tbpDetail
+            // 
+            this.tbpDetail.Controls.Add(this.listBox2);
+            this.tbpDetail.Location = new System.Drawing.Point(4, 22);
+            this.tbpDetail.Name = "tbpDetail";
+            this.tbpDetail.Size = new System.Drawing.Size(331, 238);
+            this.tbpDetail.TabIndex = 2;
+            this.tbpDetail.Text = "Detail";
+            this.tbpDetail.UseVisualStyleBackColor = true;
+            // 
+            // tbpSort
+            // 
+            this.tbpSort.Controls.Add(this.listBox1);
+            this.tbpSort.Controls.Add(this.panel1);
+            this.tbpSort.Location = new System.Drawing.Point(4, 22);
+            this.tbpSort.Name = "tbpSort";
+            this.tbpSort.Size = new System.Drawing.Size(331, 238);
+            this.tbpSort.TabIndex = 3;
+            this.tbpSort.Text = "Sort";
+            this.tbpSort.UseVisualStyleBackColor = true;
+            // 
             // panel1
             // 
             this.panel1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
@@ -270,6 +275,17 @@
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(128, 55);
             this.panel1.TabIndex = 0;
+            // 
+            // rbtnSortByPerimeter
+            // 
+            this.rbtnSortByPerimeter.AutoSize = true;
+            this.rbtnSortByPerimeter.Location = new System.Drawing.Point(4, 27);
+            this.rbtnSortByPerimeter.Name = "rbtnSortByPerimeter";
+            this.rbtnSortByPerimeter.Size = new System.Drawing.Size(105, 17);
+            this.rbtnSortByPerimeter.TabIndex = 1;
+            this.rbtnSortByPerimeter.TabStop = true;
+            this.rbtnSortByPerimeter.Text = "Sort by Perimeter";
+            this.rbtnSortByPerimeter.UseVisualStyleBackColor = true;
             // 
             // rbtnSortByArea
             // 
@@ -282,16 +298,21 @@
             this.rbtnSortByArea.Text = "Sort by Area";
             this.rbtnSortByArea.UseVisualStyleBackColor = true;
             // 
-            // rbtnSortByPerimeter
+            // listBox1
             // 
-            this.rbtnSortByPerimeter.AutoSize = true;
-            this.rbtnSortByPerimeter.Location = new System.Drawing.Point(4, 27);
-            this.rbtnSortByPerimeter.Name = "rbtnSortByPerimeter";
-            this.rbtnSortByPerimeter.Size = new System.Drawing.Size(105, 17);
-            this.rbtnSortByPerimeter.TabIndex = 1;
-            this.rbtnSortByPerimeter.TabStop = true;
-            this.rbtnSortByPerimeter.Text = "Sort by Perimeter";
-            this.rbtnSortByPerimeter.UseVisualStyleBackColor = true;
+            this.listBox1.FormattingEnabled = true;
+            this.listBox1.Location = new System.Drawing.Point(164, 13);
+            this.listBox1.Name = "listBox1";
+            this.listBox1.Size = new System.Drawing.Size(158, 199);
+            this.listBox1.TabIndex = 1;
+            // 
+            // listBox2
+            // 
+            this.listBox2.FormattingEnabled = true;
+            this.listBox2.Location = new System.Drawing.Point(16, 18);
+            this.listBox2.Name = "listBox2";
+            this.listBox2.Size = new System.Drawing.Size(302, 199);
+            this.listBox2.TabIndex = 0;
             // 
             // Main
             // 
@@ -308,8 +329,9 @@
             this.groupBox1.ResumeLayout(false);
             this.groupBox1.PerformLayout();
             this.tbpSummary.ResumeLayout(false);
-            this.tbpSort.ResumeLayout(false);
             this.groupBox2.ResumeLayout(false);
+            this.tbpDetail.ResumeLayout(false);
+            this.tbpSort.ResumeLayout(false);
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
             this.ResumeLayout(false);
@@ -340,6 +362,8 @@
         private System.Windows.Forms.Panel panel1;
         private System.Windows.Forms.RadioButton rbtnSortByPerimeter;
         private System.Windows.Forms.RadioButton rbtnSortByArea;
+        private System.Windows.Forms.ListBox listBox2;
+        private System.Windows.Forms.ListBox listBox1;
     }
 }
 
